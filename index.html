@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PROJECT</title>
+
+
+
+  <!-- internal css apply-->
+  <!-- automatic slider -->
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      color: #fcf408;
+      font-size: 30px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+
+
+
+
+
+
+    .container {
+      width: 100%;
+      height: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .name {
+      margin-top: 15px !important;
+    }
+
+    .w3-theme-d3 {
+      background-color: rgba(219, 247, 6, 0.6) !important;
+    }
+
+    .w3-theme-d3:hover {
+      background-color: rgba(248, 2, 14, 0.8) !important;
+      animation-duration: 10s;
+    }
+
+    a {
+      font-size:xx-large;
+    }
+
+    .w3-border {
+      border: 3px solid rgb(18, 16, 16) !important;
+      border-radius: 20%;
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .links-container a {
+      width: 80%;
+    }
+
+    .color {
+      background-image: url("img/yellow\ template.jpg");
+    }
+
+    .submit {
+      margin-left: 100%;
+      padding:10px;
+    
+
+    }
+
+    .movement {
+      width: 100%;
+      margin-left: 5.4%;
+      border-width: 100%;
+      padding: 0 0 0%;
+      padding-right: 1%;
+      font-size: xx-large;
+      display: flex;
+    }
+
+    .front {
+      border-style: inset;
+      height: 200%;
+      border-width: 0%;
+      margin-left: 5.3%;
+      margin-right: 0%;
+      background-color: rgb(29, 31, 9);
+      width: 100%;
+
+    }
+
+
+    .teacher {
+      padding-top: 0%;
+      padding-left: 900px;
+
+    }
+
+    .slideshow-container {
+      margin-left: 5.4%;
+      position: absolute;
+    top: 140%;
+    width: 100%;
+    bottom: 0;
+    min-height: 60px;
+    display: block;
+    }
+  </style>
+
+</head>
+
+<body class="color">
+
+
+
+
+  <div class="movement">
+    <marquee behavior="alternate" bgcolor="yellow"> WELCOME IN MY PROJECT </marquee>
+    <marquee behavior="alternate" bgcolor="yellow"> FRONT PAGE OF PROJECT</marquee>
+  </div>
+
+  <div class="front" style="color:rgb(232, 9, 46)">
+    <font face="Comic sans MS" size="4">
+      <img src="img/logo.png" alt="" width="200px" align="left" style="margin-right: 20px;">
+      <div class="college_name" style="margin-left: 1%;">
+        <span style="display: block;">राजकीय इंजीनियरिंग कॉलेज सोनभद्र</span>
+        <span> Rajkiya Engineering College Sonbhadra</span>
+
+      </div>
+
+      <center>
+        <h1 style="color:rgb(244, 10, 10)"><u>RAJKIYA ENGINEERING COLLEGE SONBHADRA MINI PROJECT</u></h1>
+      </center>
+      <center>
+        <h3 style="color:rgb(250, 10, 10)"><u>A MINI PROJECT REPORT ON AUTOMATIC WASHER CONTROL SYSTEM</u></h3>
+      </center>
+
+      <center>
+        <h4 style="color:rgb(249, 8, 8)"><u>A report submitted in partial fulfillment of the requirements for the Award
+            of
+            Degree of
+            BACHELOR OF TECHNOLOGY
+            in
+            ELECTRONICS ENGINEERING DEPARTMENT</u></h4>
+      </center>
+  </div>
+  <div class="sumbit">
+    <center>
+      <h3 style="color:red"><u>SUBMITTED BY:</u></h3>
+    </center>
+
+    <center>
+      <h3 style="color:rgb(2, 9, 2)">NAND KISHOR VYAS(1908410300025)</h3>
+      <h3 style="color:rgb(5, 13, 5)">SAKSHI TRIPATHI(1908410300041)</h3>
+      <h3 style="color:rgb(10, 12, 10)">UJJWAL PANDEY(1908410300053)</h3>
+      <h3 style="color:rgb(1, 11, 1)">CHANDAN YADAV(1908410300016)</h3>
+    </center>
+  </div>
+
+  <div class="teacher">
+    <center>
+      <h3 style="color:red">SUBMITTED TO: </h3>
+    </center>
+    <center>
+      <h3 style="color:rgb(2, 15, 2)">Dr.ABHINAV GUPTA</h3>
+    </center>
+
+    <div class="links-container">
+      <center>
+        <p style="color:rgb(248, 20, 20)"><a href="img/NAND VERILOG PROJECT (1).pdf"
+            class="w3-button w3-round w3-theme-d3 w3-border link" style="color:brown" type="button"><button
+              class="btn success">MY PROJECT IN PDF</button></a></p>
+      </center>
+
+      <center>
+        <p style="color:rgb(253, 18, 65)"><a href="./verilog.html"
+            class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success"> MY VERILOG
+              CODE</button></a></p>
+      </center>
+
+      <center>
+        <p style="color:rgb(254, 19, 19)"><a href="./testbench.html"
+            class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success">TEST BENCH
+              CODE</button></a></p>
+      </center>
+
+      <center>
+        <p style="color:rgb(248, 17, 17)"><a href="https://myportfolio-nkv.netlify.app/"
+            class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success">ABOUT MY
+              PROFILE</button></a></p>
+      </center>
+
+      <center>
+        <p style="color:rgb(251, 21, 32)"><a href="https://nandkishorvyas70.wixsite.com/my-site/contact-8"
+            class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success">ABOUT CONTACT
+              ME</button></a></p>
+      </center>
+
+      <center>
+        <p style="color:rgb(255, 0, 21)"><a href="https://nandkishorvyas70.wixsite.com/myportfolio/about-4"
+            class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success">ABOUT MY
+              PROJECTS</button></a></p>
+      </center>
+    </div>
+
+
+
+  </div>
+  <div class="slideshow-container">
+    <h2>Automatic Slideshow</h2>
+  
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/verilog image.png" style="width:25%">
+      <div class="text" >VIEW SCHEMATIC</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/verilog image1.jpg" style="width:27%">
+      <div class="text">Circuit connection on hardware</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/verilog image3.png" style="width:27%">
+      <div class="text">implementation</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+
+  <embed src="img/NAND VERILOG PROJECT (1).pdf" type="application/pdf" width="100%" height="400px" />
+
+  <a href="img/NAND VERILOG PROJECT (1).pdf" download>
+    <b style="color:red"><button class="btn success">DOWNLOAD PROJECT</b>
+
+
+    <!--Footer2(start)-->
+    <h1 class="footer">
+      <table id="footer" border="0" width="10%" cellpadding="1" cellspacing="0" bgcolor="black">
+        <tr>
+          <td>
+            <table border="0" cellpadding="1" cellspacing="0" width="40%" align="center">
+              <tr>
+                <td width="50%" valign="top">
+                  <font face="Verdana" color="white" size="1">
+                    ©Copyright @nkv .
+                    @All rights reserved
+                    <div>Made by Nand Kishor Vyas || <a href="http://recsonbhadra.ac.in" target="_blank">for more
+                        info visit on this website of college :www.recsonbhadra.com</a>
+                    </div>
+                  </font>
+                </td>
+
+                <td width="10%">
+                  <font face="arial" color="white" size="5">
+                    <a href="#header" style="text-decoration:none">
+                      <font face="Verdana" color="white" size="6">
+                <td>
+
+                  <a href="https://aktu.ac.in" target="blank">
+                    <b><img src="img/aktulogo.png" alt="" width="100px" align="left" style="margin-right: 20px;">
+                  </a>
+
+                </td>
+
+                <td>
+
+
+                  <a href="https://swayam.gov.in/" target="blank">
+                    <img src="img/swayamlogo.png" alt="" width="90px" height="80px" align="center"
+                      style="margin-right: 20px;"></b>
+                  </a>
+
+                </td>
+
+
+
+
+
+                <td>
+
+
+                  <a href="https://www.aicte-india.org/" target="blank">
+                    <img src="img/aictelogo.jpg" alt="" width="90px" height="80px" align="center"
+                      style="margin-right: 20px;"></b>
+                  </a>
+
+                </td>
+
+
+                <td>
+
+
+                  <a href="https://www.aicte-india.org/" target="blank">
+                    <img src="img/nptllogo.png" alt="" width="90px" height="80px" align="center"
+                      style="margin-right: 20px;"></b>
+                  </a>
+
+                </td>
+
+                <td>
+
+
+                  <a href="https://prutor.ai/college/aktu841/" target="blank">
+                    <img src="img/prutorlogo.jpg" alt="" width="90px" height="80px" align="center"
+                      style="margin-right: 20px;"></b>
+                  </a>
+
+                </td>
+
+                <td>
+
+
+                  <a href="https://www.scrs.in/" target="blank">
+                    <img src="img/SCRS.png" alt="" width="90px" height="80px" align="center"
+                      style="margin-right: 20px;"></b>
+                  </a>
+
+                </td>
+
+
+                <td>
+
+
+                  <a href="https://www.incutopia.com/" target="blank">
+                    <img src="img/incutopia.png" alt="" width="90px" height="80px" align="center"
+                      style="margin-right: 20px;"></b>
+                  </a>
+
+                </td>
+
+
+
+
+
+
+
+                </font>
+  </a>
+  </font>
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+  </h1>
+
+
+
+
+</body>
+
+</html>

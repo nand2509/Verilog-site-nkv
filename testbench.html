@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.html">
+    <style>
+      .btn success{
+        color: blue;
+      }
+        .color{
+            background-image: url("img/yellow\ template.jpg");
+        }
+        .coding{
+            margin-left: 5.3%;
+        }
+        .header{
+            border-style: inset;
+      height: 200%;
+      border-width: 100%;
+      height: 100%;
+      margin-left: 5.3%;
+      margin-right: 0%;
+      background-color: rgb(29, 31, 9);
+      width: 100%;
+        }
+        .college1{
+            font-size: larger;
+        }
+        .college{
+            font-size: larger;
+            font-display:inherit;
+        }
+        .move{
+            margin-left: 5.3%;
+            font-size: xx-large;
+            display: flex;
+        }
+        .move2{
+          margin-left: 5.3%;
+          font-size: xx-large;
+          display: flex;
+        }
+        .heading{
+          margin-left: 40%;
+        }
+        .slideshow-container{
+          margin-left: 40%;
+        }
+    </style>
+</head>
+
+<body class="color">
+<div class="move">
+    <marquee behavior="alternate" bgcolor="yellow"> WELCOME IN MY PROJECT </marquee>
+    <marquee behavior="alternate" bgcolor="yellow">TESTBENCH FOR SYSTEM</marquee>
+    </div>
+<div class="header">
+    <font face="Comic sans MS" size="4">
+        <img src="img/logo.png" alt="" width="110px" align="left" style="margin-right: 20px;">
+        <div class="college_name" style="margin-left: 2%;">
+          
+          <span class="college" style="color: rgb(243, 12, 12);"> RAJKIYA ENGINEERING COLLEGE SONBHADRA</span>
+    
+        </div>
+
+
+    <h2 style="color:red"> THIS IS A TESTBENCH FOR AUTOMATIC WASHER CONTROL SYSTEM</h2>
+</div>
+
+    
+    <center>
+        <p><a href="./index.html"
+                class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success">HOME
+                    PAGE</button></a></p>
+    </center>
+
+
+    <center>
+        <p><a href="./verilog.html"
+                class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success">VERILOG CODE                    CODE PAGE</button></a></p>
+    </center>
+<div class="coding">
+  <h2>/Testbench:</h2>
+  <h2>module washmacTB;</h2>
+  <h2>reg rst,clk,power,fill_water,add_det;</h2>
+  <h2>wire out;</h2>
+  <h2>washing_machine </h2>
+  <h2>wm(.rst(rst),.clk(clk),.power(power),.fill_water(fill_water),.add_det(add_d
+    et),.out(out));</h2>
+  <h2>initial begin</h2>
+  <h2>$monitor($time,"rst %b clk %b power %b fill_water %b add_det %b out</h2>
+  <h2>%b",rst,clk,power,fill_water,add_det,out);</h2>
+  <h2>clk=0;</h2>
+  <h2>rst=1;</h2>
+  <h2>power=1;</h2>
+  <h2>fill_water=1;</h2>
+  <h2>add_det=0;</h2>
+  <h2>#5 rst=0;</h2>
+  <h2>#5 power=1;</h2>
+  <h2>#5 fill_water=1;</h2>
+  <h2>#5 add_det=1;</h2>
+  <h2>#5 power=1;</h2>
+  <h2>#5 fill_water=1;</h2>
+  <h2>#5 add_det=0;</h2>
+  <h2>#5 power=1;</h2>
+  <h2>#5 fill_water=0;</h2>
+  <h2>#5 add_det=1;</h2>
+  <h2>end</h2>
+  </div>
+
+<div class="heading">
+  <h2>Automatic Slideshow</h2>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/verliog output waveform.jpg" style="width:35%">
+      <div class="text">Output Waveform</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/RTL_SCAHEMATIC OF VERILOG.png" style="width:26%">
+      <div class="text">RTL_SCAHEMATIC</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/verilog image3.png" style="width:26%">
+      <div class="text">Circuit Daigram</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+  <marquee bgcolor="yellow" behavior="alternate" font="100px" aria-atomic="false" class="move2"> Thanks for visting on my page
+    !!!!!!!!!</marquee>
+
+
+</body>
+
+</html>

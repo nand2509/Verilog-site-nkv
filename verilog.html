@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./testbench.html">
+    <style>
+        .color{
+            background-image: url("img/yellow\ template.jpg");
+        }
+        .coding{
+            margin-left: 5.3%;
+        }
+        .header{
+            border-style: inset;
+      height: 200%;
+      border-width: 100%;
+      height: 100%;
+      margin-left: 5.3%;
+      margin-right: 0%;
+      background-color: rgb(29, 31, 9);
+      width: 100%;
+        }
+        .college1{
+            font-size: larger;
+        }
+        .college{
+            font-size: larger;
+            font-display:inherit;
+        }
+        .move{
+            margin-left: 5.3%;
+            font-size: xx-large;
+            display: flex;
+        }
+        .move2{
+            margin-left: 5.3%;
+            font-size: xx-large;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body class="color">
+<div class="move">
+    <marquee behavior="alternate" bgcolor="yellow"> WELCOME IN MY PROJECT </marquee>
+    <marquee behavior="alternate" bgcolor="yellow">VERILOG CODE FOR SYSTEM</marquee>
+    </div>
+<div class="header">
+    <font face="Comic sans MS" size="4">
+        <img src="img/logo.png" alt="" width="110px" align="left" style="margin-right: 20px;">
+        <div class="college_name" style="margin-left: 2%;">
+          
+          <span class="college" style="color: rgb(243, 12, 12);"> RAJKIYA ENGINEERING COLLEGE SONBHADRA</span>
+    
+        </div>
+
+
+    <h2 style="color:red"> THIS IS A VERILOG CODE FOR AUTOMATIC WASHER CONTROL SYSTEM</h2>
+</div>
+
+    
+    <center>
+        <p><a href="./index.html"
+                class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success">HOME
+                    PAGE</button></a></p>
+    </center>
+
+
+    <center>
+        <p><a href="./testbench.html"
+                class="w3-button w3-round w3-theme-d3 w3-border link" type="button"><button class="btn success">VERILOG TEST BENCH
+                    CODE PAGE</button></a></p>
+    </center>
+<div class="coding">
+
+    <h3>module washing_machine(rst,clk,power,fill_water,add_det,out);</h3>
+    <h3>input rst,clk,power,fill_water,add_det;</h3>
+    <h3>output out;</h3>
+    <h3>reg out;</h3>
+    <h3>reg [3:0] count=0;</h3>
+    <h3>reg [1:0] state;</h3>
+    <h3>parameter idle=0,a=1,b=2,c=3; </h3>
+    <h3>always @(posedge clk) begin</h3>
+    <h3>if (rst==1) begin</h3>
+    <h3> state <= idle;</h3>
+            <h3>out <= 0;</h3>
+                    <h3>end</h3>
+                    <h3>else </h3>
+                    <h3>case (state)</h3>
+                    <h3>idle: if (power==1) begin</h3>
+                    <h3>state <= a;</h3>
+                            <h3>out <= 0;</h3>
+                                    <h3>end</h3>
+                                    <h3>else </h3>
+                                    <h3></h3>
+
+                                    <h3>else </h3>
+                                    <h3>out <= 0;</h3>
+                                            <h3>end</h3>
+                                            <h3>a: if (fill_water==1) begin</h3>
+                                            <h3>state <= b;</h3>
+                                                    <h3>out <= 0;</h3>
+                                                            <h3>end</h3>
+                                                            <h3>else</h3>
+                                                            <h3></h3>
+                                                            <h3>state <= a;</h3>
+                                                                    <h3>out <= 0;</h3>
+                                                                            <h3>end</h3>
+                                                                            <h3>b: if (add_det==1) begin</h3>
+                                                                            <h3>state <= c;</h3>
+                                                                                    <h3>out <= 0;</h3>
+
+                                                                                            <h3>end</h3>
+                                                                                            <h3>else</h3>
+                                                                                            <h3>begin</h3>
+                                                                                            <h3>state <= b;</h3>
+                                                                                                    <h3>state <= b;</h3>
+                                                                                                            <h3>end</h3>
+                                                                                                            <h3>c: if
+                                                                                                                (fill_water==1)
+                                                                                                                begin
+                                                                                                            </h3>
+                                                                                                            <h3>state <=
+                                                                                                                    idle;</h3>
+                                                                                                                    <h3>out
+                                                                                                                        <=
+                                                                                                                            1;</h3>
+
+                                                                                                                            <h3>out
+                                                                                                                                <=
+                                                                                                                                    1;</h3>
+                                                                                                                                    <h3>else
+                                                                                                                                    </h3>
+                                                                                                                                    <h3>begin
+                                                                                                                                    </h3>
+                                                                                                                                    <h3>state
+                                                                                                                                        <=
+                                                                                                                                            c;</h3>
+                                                                                                                                            <h3>out
+                                                                                                                                                <=
+                                                                                                                                                    0;</h3>
+                                                                                                                                                    <h3>end
+                                                                                                                                                    </h3>
+                                                                                                                                                    <h3>endcase
+                                                                                                                                                    </h3>
+                                                                                                                                                    <h3>end
+                                                                                                                                                    </h3>
+                                                                                                                                                    <h3>endmodule
+                                                                                                                                                    </h3>
+                                                                                                                                                </div>
+
+                                                                                                                                                    <marquee class="move2"
+                                                                                                                                                        behavior="alternate"
+                                                                                                                                                        bgcolor="yellow">
+                                                                                                                                                        Thanks
+                                                                                                                                                        for
+                                                                                                                                                        visiting
+                                                                                                                                                        on
+                                                                                                                                                        my
+                                                                                                                                                        page
+                                                                                                                                                        !!!!!
+                                                                                                                                                    </marquee>
+
+</body>
+
+</html>
